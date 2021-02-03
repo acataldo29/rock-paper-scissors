@@ -31,7 +31,36 @@ Navigate to the repository by changing your working directory in the command lin
 ls
 ```
 
-You should see two files: README.md (this file) and game.py. The second file, game.py, contains the code that is executed to play the game. 
+You should see a few files. The file called 'game.py' contains the code that is executed to play the game. This file is the 'README' file, which explains the setup and instructions to play the game. The '__init__' file allows all of the files to work with each other in order to execute the program.
+
+Finally, the 'requirements' file lists a third-party python package that is necessary to run the 'game.py' file. At this point, please install the packages within the 'requirements' file by executing the following command in your command line:
+
+```sh
+pip install -r requirements.txt
+```
+
+### Creating a new Environment
+
+You will need to create a new environment in which to store environment variables. Your PLAYER_NAME variable, which I will discuss later, is an environment variable that is a part of the application.
+
+To create and activate a new environment, enter the following commands into your command prompt:
+
+```sh
+conda create -n my-game-env python=3.8
+conda activate my-game-env
+```
+You only need to create the environment the first time you run the application, however you may need to activate the environment more than once.
+
+Now that our environment is created, we will need a document that can store our environment variable, PLAYER_NAME. We satisfy this by entering the following command into the command line:
+
+```sh
+touch .env
+```
+This will create a blank '.env' file. Open the '.env' file and enter your desired username, following the exact syntax below. Any misspellings of the variable name, missing quotation marks, or wrong capitalizations will result in the application failing.
+
+    PLAYER_NAME="Desired Name"
+
+Now, your set up is complete, and you are ready to play the game!
 
 ## Playing the Game
 
@@ -41,4 +70,15 @@ To start the game, simply input the following command:
 python game.py
 ```
 
-You will then be prompted to enter a user name, which can be anything you'd like. Then, the application will prompt you to enter your choice. You must type either "rock", "paper", or "scissors
+If everything is set up correctly, you should now see this:
+
+```
+------------------------------
+Rock, Paper, Scissors, Shoot!
+-----------------------------
+Welcome John Smith! Please select either 'rock', 'paper', or 'scissors':
+```
+
+Now, input either 'rock', 'paper', or 'scissors' exactly as shown above. Once again, any misspellings, wrongly capitalized letters, or different inputs will cause the game to fail, and you will have to restart.
+
+Once you make your input, the computer will randomly select a choice, and the application will determine a winner. 

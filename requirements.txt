@@ -1,0 +1,4 @@
+#This includes required packages to run this application
+
+python-dotenv #https://github.com/theskumar/python-dotenv
+
