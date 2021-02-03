@@ -31,7 +31,7 @@ Navigate to the repository by changing your working directory in the command lin
 ls
 ```
 
-You should see a few files. The file called 'game.py' contains the code that is executed to play the game. This file is the 'README' file, which explains the setup and instructions to play the game. The '__init__' file allows all of the files to work with each other in order to execute the program.
+You should see a few files. The file called 'game.py' contains the code that is executed to play the game. This file is the 'README' file, which explains the setup and instructions to play the game. The '__init__' file allows all of the files to work with each other in order to execute the program. 
 
 Finally, the 'requirements' file lists a third-party python package that is necessary to run the 'game.py' file. At this point, please install the packages within the 'requirements' file by executing the following command in your command line:
 
