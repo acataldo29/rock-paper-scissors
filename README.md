@@ -58,7 +58,7 @@ touch .env
 ```
 This will create a blank '.env' file. Open the '.env' file and enter your desired username, following the exact syntax below. Any misspellings of the variable name, missing quotation marks, or wrong capitalizations will result in the application failing.
 
-    PLAYER_NAME="Desired Name"
+    PLAYER_NAME="John Smith"
 
 Now, your set up is complete, and you are ready to play the game!
 
