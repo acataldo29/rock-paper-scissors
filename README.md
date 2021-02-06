@@ -25,19 +25,15 @@ Your repository will save to your desired working directory.
 
 ## Contents of the Repository
 
-Navigate to the repository by changing your working directory in the command line. Use the same command as above to accomplish this. You can see the files inside by running the following command:
+Navigate to the repository by changing your working directory in the command line. Use the same command as above to accomplish this. 
+
+You can see the files inside by running the following command:
 
 ```sh
 ls
 ```
 
-You should see a few files. The file called 'game.py' contains the code that is executed to play the game. This file is the 'README' file, which explains the setup and instructions to play the game. The '__init__' file allows all of the files to work with each other in order to execute the program. The `.gitignore' file tells the application which files to ignore when uploading to GitHub.
-
-Finally, the 'requirements' file lists a third-party python package that is necessary to run the 'game.py' file. At this point, please install the packages within the 'requirements' file by executing the following command in your command line:
-
-```sh
-pip install -r requirements.txt
-```
+You should see a few files. This file is the 'README' file, which explains the setup and instructions to play the game. The file called 'game.py' contains the code that is executed to play the game.  The '__init__' file allows all of the files to work with each other in order to execute the program. The final document, 'requirements' we will discuss later.
 
 ### Creating a new Environment
 
@@ -60,6 +56,17 @@ This will create a blank '.env' file. Open the '.env' file and enter your desire
 
     PLAYER_NAME="John Smith"
 
+Please remember to save the '.env' file once your player name is correct.
+
+## Installing Necessary Packages
+
+Now we will use the 'requirements' file to download and install any necessary third-party python packages. This file contains a package called 'dotenv', which will read the information in our '.env' file and store it as an environment variable.
+
+To install the package within the 'requirements' file, enter the following command into your command line:
+
+```sh
+pip install -r requirements.txt
+```
 Now, your set up is complete, and you are ready to play the game!
 
 ## Playing the Game
