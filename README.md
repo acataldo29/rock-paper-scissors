@@ -23,7 +23,7 @@ git clone https://github.com/acataldo29/rock-paper-scissors.git
 
 Your repository will save to your desired working directory. 
 
-## Contents of the Repository
+### Contents of the Repository
 
 Navigate to the repository by changing your working directory in the command line. Use the same command as above to accomplish this. 
 
@@ -58,7 +58,7 @@ This will create a blank '.env' file. Open the '.env' file and enter your desire
 
 Please remember to save the '.env' file once your player name is correct.
 
-## Installing Necessary Packages
+### Installing Necessary Packages
 
 Now we will use the 'requirements' file to download and install any necessary third-party python packages. This file contains a package called 'dotenv', which will read the information in our '.env' file and store it as an environment variable.
 
